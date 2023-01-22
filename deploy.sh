@@ -6,7 +6,7 @@ set -e
 
 env PUBLIC_URL=https://ernestoper.github.io/testevite npm run build
 
-cd build
+cd dist
 
 git init
 git add -A
