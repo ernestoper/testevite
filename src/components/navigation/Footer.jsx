@@ -173,10 +173,12 @@ function Footer(){
     )
 }
 
-const mapStateToProps=state=>({
+// const mapStateToProps=state=>({
 
-})
+// })
 
-export default connect(mapStateToProps, {
+// export default connect(mapStateToProps, {
 
-}) (Footer)
+// }) (Footer)
+
+export default Footer
