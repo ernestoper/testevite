@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/img/logo.png'
 
 const navigation = {
@@ -14,7 +15,7 @@ const navigation = {
     { name: 'contato', href: '/contato' },
   ],
   company: [
-    { name: 'About', href: '#' },
+    { name: 'About', href: '/mim' },
     { name: 'Blog', href: '#' },
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '#' },
@@ -89,7 +90,6 @@ const navigation = {
     },
   ],
 }
-const top = '';
 function Footer() {
   return (
     <footer className="bg-verdecatarro border-4 border-pretoneon rounded-lg" aria-labelledby="footer-heading">
@@ -123,10 +123,13 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
                         {item.name}
-                      </a>
+                        
+                      </Link>
+                      
                     </li>
+                    
                   ))}
                 </ul>
               </div>
@@ -135,9 +138,9 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -149,9 +152,12 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={item.href} className="text-base text-gray-500 hover:text-gray-900">
                         {item.name}
-                      </a>
+
+                        
+                      </Link>
+                      
                     </li>
                   ))}
                 </ul>
@@ -161,9 +167,9 @@ function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                      <Link href={item.href} className="text-base text-gray-500 hover:text-gray-900">
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

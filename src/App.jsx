@@ -17,13 +17,13 @@ function App() {
     <Provider store={store}>
       <Router>
         <Routes>
-          <Route path='*' element={<Error404/>}/>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
-          <Route path='/servicos' element={<Servicos/>}/>
-          <Route path='/clientes' element={<Clientes/>}/>
-          <Route path='/mim' element={<Mim/>}/>
-          <Route path='/contato' element={<Contato/>}/>
+          <Route exact path='*' element={<Error404/>}/>
+          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/portfolio' element={<Portfolio/>}/>
+          <Route exact path='/servicos' element={<Servicos/>}/>
+          <Route exact path='/clientes' element={<Clientes/>}/>
+          <Route exact path='/mim' element={<Mim/>}/>
+          <Route exact path='/contato' element={<Contato/>}/>
         </Routes>
       </Router>
     </Provider>
