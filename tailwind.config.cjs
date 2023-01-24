@@ -19,7 +19,8 @@ module.exports = {
         "verdecatarro":'#C8FF5D',
         "azulverde":'#600DFF',
         "azulbebe":'#08ECF0',
-        "amarelobebe":'#FAEE0A'
+        "amarelobebe":'#FAEE0A',
+        "bege":'#ede7e2'
       }
 
     },
