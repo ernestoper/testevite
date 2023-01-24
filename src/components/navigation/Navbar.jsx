@@ -20,7 +20,7 @@ function Navbar() {
           />
         </Link>
 
-        <div className="flex-shrink-0  hidden lg:inline-flex border-4 border-pretoneon rounded-full">
+        <div className="flex-shrink-0  hidden md:inline-flex lg:inline-flex border-4 border-pretoneon rounded-full">
           <NavLink to='/' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon  rounded-full">Home</NavLink>
           <NavLink to='/servicos' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Serviços</NavLink>
           <NavLink to='/mim' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Quem sou eu</NavLink>
@@ -46,7 +46,7 @@ function Navbar() {
               <Link
               to='/contato'
                   type= 'button'
-                  className=" hidden  border-4 border-pretoneon relative lg:inline-flex items-center rounded-full  bg-azulbebe px-2  text-xl font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className=" hidden  border-4 border-pretoneon relative md:inline-flex items-center rounded-full  bg-azulbebe px-2  text-xl font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   Contato
                   <HashLoader className=" ml-3 mr-1 h-5 w-6 mt-2 mb-2" loading={loading} size={30} color="#f2f2f2" />
