@@ -118,7 +118,7 @@ function Footer() {
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
+              <div className="mt-12 md:mt-0">
                 <h3 className="text-base font-medium text-pretoneon">Empresa</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
