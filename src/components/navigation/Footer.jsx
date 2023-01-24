@@ -100,7 +100,7 @@ function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
-              className="h-10"
+              className="lg:h-28 h-12"
               src={logo}
               alt="Company name"
             />

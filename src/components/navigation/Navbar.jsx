@@ -7,25 +7,27 @@ import HashLoader from "react-spinners/HashLoader";
 function Navbar() {
   const [loading,setLoading]=useState(true)
   return (
-    <nav className='w-full mt-5 rounded-full border-4 border-pretoneon  text-orange-500  fixed bg-verdecatarro'>
-      <div className=" px-4 py-4 sm:px-6">
-      <div className="-ml-6 -mt-2 -mb-2 md:px-14 px-4 flex flex-wrap items-center justify-between sm:flex-nowrap">
-        <Link className="ml-0 mt-2">
+    <nav className=' w-full mt-6 rounded-full border-4 lg:h-20  h-16 border-pretoneon  fixed bg-verdecatarro'>
+      <div className=" lg:-mt-2  -mt-5 ">
+      <div className="  flex flex-wrap items-center justify-between sm:flex-nowrap rounded-full ">
+        <Link className="ml-6 -mt-1">
 
           <img
             src={logo}
-            width={30}
-            height={40}
-            className=''
+            className=""
+            width={100}
+            height={100}
+  
           />
         </Link>
+        
 
-        <div className="flex-shrink-0  hidden md:inline-flex lg:inline-flex border-4 border-pretoneon rounded-full">
-          <NavLink to='/' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon  rounded-full">Home</NavLink>
-          <NavLink to='/servicos' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Serviços</NavLink>
-          <NavLink to='/mim' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Quem sou eu</NavLink>
-          <NavLink to='/portfolio' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Portfólio</NavLink>
-          <NavLink to='/clientes' className="px-3 py-3 mt-0 mx-0 text-lg font-semibold leading-6 text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Clientes</NavLink>
+        <div className=" bg-verdecatarro flex-shrink-0  hidden md:inline-flex lg:inline-flex border-2  border-pretoneon rounded-full items-center ">
+          <NavLink to='/' className="shrink  transition delay-20 px-7 py-3 mt-0 mx-0 md:text-sm text-xl font-semibold leading-6 uppercase text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon  rounded-full">Home</NavLink>
+          <NavLink to='/servicos' className=" transition delay-20 px-3 py-3 mt-0 mx-0 md:text-sm text-xl font-semibold leading-6 uppercase text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Serviços</NavLink>
+          <NavLink to='/mim' className=" transition delay-20 px-3 py-3 mt-0 mx-0 md:text-sm text-xl font-semibold leading-6 uppercase text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Quem sou eu</NavLink>
+          <NavLink to='/portfolio' className="ease-linear transition delay-20 px-3 py-3 mt-0 mx-0 md:text-sm text-xl font-semibold leading-6 uppercase text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Portfólio</NavLink>
+          <NavLink to='/clientes' className="ease-linear transition delay-20 px-5 py-3 mt-0 mx-0 md:text-sm text-xl font-semibold leading-6 uppercase text-gray-900 inline-flex  hover:text-white hover:bg-pretoneon rounded-full">Clientes</NavLink>
 
           {/* <button
             type="button"
@@ -41,8 +43,9 @@ function Navbar() {
               Hire Us
               <DotLoader className="ml-3 -mr-1 h-5 w-5" loading={loading} size={20} color="#f2f2f2" />
           </Link> */}
+      
           </div>
-          <div className='-ml-6 -mt-2 -mb-2  px-2  inlineflex flex flex-wrap items-center justify-between sm:flex-nowrap" '>
+          <div className='-ml-6 -mt-2 -mb-2  px-2 md:px-4 hidden md:inline-flex lg:inline-flex flex-wrap items-center justify-between sm:flex-nowrap" '>
               <Link
               to='/contato'
                   type= 'button'
