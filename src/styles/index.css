@@ -4,7 +4,7 @@
 
 .active {
     /* ao fazer click muda de cor */
-    @apply  text-magenta
+    @apply  text-laranjaneon
 }
 
 
@@ -21,13 +21,13 @@ border-radius: 10px;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #C8FF5D;
+background: #FF5F1F;
 /* opacity: 100px; */
 border-radius: 10px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb:hover{
-background: #C8FF5D;
+background:#FF5F1F;
 opacity: 10px;
 border-radius: 10px;
 }
