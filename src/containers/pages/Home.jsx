@@ -1,6 +1,5 @@
 import React from 'react'
 import CTA from '../../components/home/CTA'
-import Features from '../../components/home/Features'
 import Header from '../../components/home/Header'
 import Incentives from '../../components/home/Incentives'
 import UseCases from '../../components/home/UseCases'
@@ -16,7 +15,6 @@ function Home() {
         <Header/>
         <Incentives/>
         <UseCases/>
-        <Features/>
         <CTA/>
       </div>
 
