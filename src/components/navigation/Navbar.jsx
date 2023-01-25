@@ -2,21 +2,41 @@ import React, { useState } from 'react'
 import { connect } from "react-redux";
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/img/logo.png';
+import logoa from '../../assets/img/portfolio/LOGOCORES/LOGOBRANCA.png';
 import DotLoader from "react-spinners/DotLoader";
 import HashLoader from "react-spinners/HashLoader";
+
+
+window.onscroll = function () {scrollFunction()}
+
+function scrollFunction() {
+
+  if (document.getElementById('navbar')){
+      if (document.body.scrollTop >50 || document.documentElement.scrollTop>50) {
+        document.getElementById('navbar').classList.add('bg-magenta')
+
+      } 
+      else {
+
+        document.getElementById('navbar').add.remove('bg-verdecatarro')
+
+      }
+    }  
+}
+
 function Navbar() {
   const [loading,setLoading]=useState(true)
   return (
-    <nav className=' w-full mt-6 rounded-full border-4 lg:h-20  h-16 border-pretoneon  fixed bg-verdecatarro'>
-      <div className=" lg:-mt-2  -mt-5 ">
-      <div className="  flex flex-wrap items-center justify-between sm:flex-nowrap rounded-full ">
-        <Link className="ml-6 -mt-1">
+    <nav id='navbar' className=' w-full  transition duration-300 eas-in-out   lg:h-24  h-16   fixed bg-navb z-30'>
+      <div className=" lg:-mt-2  mt-0  md:mt-2">
+      <div className=" -mt-10 flex flex-wrap items-center justify-between sm:flex-nowrap rounded-full ">
+        <Link className="lg:ml-6 mt-3 lg:-mt-1 z-30 ml-2">
 
           <img
-            src={logo}
-            className=""
-            width={100}
-            height={100}
+            src={logoa}
+            className=" z-20 lg:h-44 lg:w-96 h-28 w-40 "
+            // width={350}
+            // height={140}
   
           />
         </Link>
