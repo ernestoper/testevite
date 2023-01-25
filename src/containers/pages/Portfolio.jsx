@@ -3,8 +3,7 @@ import Header from '../../components/portfolio/Header'
 import Footer from '../../components/navigation/Footer'
 import Navbar from '../../components/navigation/Navbar'
 import Layout from '../../hocs/layouts/Layout'
-import CaseCard from '../../components/portfolio/CaseCard'
-import CasesList from '../../components/portfolio/CasesList'
+import UseCases from '../../components/portfolio/UseCases'
 
 function Portfolio() {
   return (
@@ -12,7 +11,7 @@ function Portfolio() {
       <Navbar/>
       <div className='pt-32'>
         <Header/>
-        <CasesList/>
+        <UseCases/>
       </div>
       <Footer/>
     </Layout>
