@@ -1,5 +1,5 @@
 import React from 'react'
-import Artbo from '../../assets/img/portfolio/logos/6.png';
+import Artbo from '../../assets/img/portfolio/logos/1.png';
 const posts = [
     {
       title: 'Boost your conversion rate',

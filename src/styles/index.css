@@ -2,32 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
-    /* ao fazer click muda de cor */
-    @apply  text-laranjaneon
-}
-
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-    z-index: -1;
-  }
-  
-/* Track */
-::-webkit-scrollbar-track {
-border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-background: #FF5F1F;
-/* opacity: 100px; */
-border-radius: 10px;
-}
-/* Handle */
-::-webkit-scrollbar-thumb:hover{
-background:#FF5F1F;
-opacity: 10px;
-border-radius: 10px;
-}

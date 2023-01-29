@@ -1,5 +1,5 @@
 {
-  "name": "edsonfinal",
+  "name": "siteedson",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,15 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.8",
+    "@heroicons/react": "^2.0.14",
+    "framer-motion": "^8.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-floating-whatsapp": "^5.0.8",
+    "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.7.0",
+    "react-router-dom": "^6.8.0",
+    "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
-    "react-spinners": "^0.13.8",
-    "redux": "^4.2.0",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.4.2"
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
