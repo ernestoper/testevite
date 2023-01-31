@@ -7,12 +7,15 @@ import Incentives from '../../components/home/Incentives'
 import UseCases from '../../components/home/UseCases'
 import Footer from '../../components/navigation/Footer'
 import Navbar from '../../components/navigation/Navbar'
-
+import { useEffect } from "react"
 function Home() {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+},[])
   return (
     <Layout>
       <Navbar/>
-      <div className='pt-32'>
+      <div  className=''>
         <Header/>
         <Incentives/>
         <UseCases/>

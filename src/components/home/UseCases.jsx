@@ -51,9 +51,9 @@ const posts = [
   ]
 function UseCases() {
   return (
-    <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+    <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 bg-gradient-to-r from-pretoneon via-purple-500 to-laranjaneon">
     <div className="absolute inset-0">
-      <div className="h-1/3 bg-white sm:h-2/3" />
+      <div className="h-1/3  sm:h-2/3" />
     </div>
     <div className="relative mx-auto max-w-7xl">
       <div className="text-center">

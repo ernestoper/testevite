@@ -4,8 +4,8 @@ import logo from '../../assets/img/portfolio/LOGOCORES/LOGOBRANCA.png';
 
 const Footer = () => {
   return (
-    <div className='w-full py-20 h-auto border-b-[1px] bg-pretoneon border-b-black grid grid-cols-1 '>
-    <div className=" bg-pretoneon border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8 ">
+    <div className='border-t-2 border-black  w-full py-20 h-auto  bg-gradient-to-r from-pretoneon via-purple-500 to-laranjaneon border-b-black grid grid-cols-1 '>
+    <div className="  grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8 ">
       <div className="w-full h-full flex items-center flex-col gap-8">
         <img className="w-32" src={logo} alt="logo" />
         <div className="flex gap-4">
@@ -135,7 +135,7 @@ const Footer = () => {
 
 
     </div>
-    <div className="mt-32 h-full  bg-pretoneon border-b-black ">
+    <div className="mt-3 h-full  bg-gradient-to-r from-pretoneon  to-laranjaneon ">
           <p className="text-base text-white hover:text-laranjaneon xl:text-center">&copy; 2023 Edson, Inc. All rights reserved.</p>
       </div>
     </div>

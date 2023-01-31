@@ -19,7 +19,7 @@ const incentives = [
   ]
 function Incentives() {
   return (
-    <div className="bg-blue-800 rounded-lg">
+    <div className="bg-blue-800  bg-gradient-to-r from-purple-500 via-pretoneon to-laranjaneon">
     <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
       <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
         <div className="max-w-3xl">

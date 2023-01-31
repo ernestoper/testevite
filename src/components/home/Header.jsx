@@ -1,5 +1,8 @@
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
+import fundo from '../../assets/img/fundo/fundo.png';
+import perfil from '../../assets/img/fundo/perfil1.png';
+import perfils from '../../assets/img/fundo/semfundo.png';
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -88,18 +91,16 @@ const navigation = {
 }
 function Header(){
 
-    
+  return (
 
-    return(
-      <main>
-      <div className="relative px-6 lg:px-8">
-        <div className="mx-auto max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12  ">
-          <div>
-            <div>
-              <h1 className="text-4xl font-semibold tracking-tight pb-16  sm:text-7xl">VAMOS JUNTOS ELEVAR</h1>
-              <h1 className="text-4xl font-semibold tracking-tight pb-16  sm:text-7xl">
-             <span></span>
-                  <Typewriter
+ <div className="bg-pretoneon relative pt-40 pb-20 lg:pt-44  bg-gradient-to-r from-pretoneon via-purple-500 to-laranjaneon">
+    <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
+        <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-200 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
+        VAMOS JUNTOS ELEVAR
+          <br className="lg:block hidden"/> 
+          <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-500  ">
+            
+            <Typewriter
                         words={[' O NIVEL DA SUA MARCA?']}
                         loop={0}
                         cursor
@@ -111,30 +112,77 @@ function Header(){
                         // onLoopDone={handleDone}
                         // onType={handleType}
                     />
-              </h1>
-              <p className="mt-16 text-2xl max-w-3xl leading-8 text-black ">
-              Jumpstart today your business with one of our services that range from <span className='lg:text-xl text-md font-medium leading-8 text-gray-700 sm:text-center  transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'><Link to='/'>Web Development</Link></span> 
-              <span className='mx-1 lg:text-xl text-md font-medium leading-8 text-gray-700 sm:text-center transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'><Link to='/'> App Development</Link></span>
-              <span className='mx-1 lg:text-xl text-md font-medium leading-8 text-gray-700 sm:text-center transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'><Link to='/'> Game Development</Link></span>
-              <span className='mx-1 lg:text-xl text-md font-medium leading-8 text-gray-700 sm:text-center transition duration-300 ease-in-out border-b-2 border-transparent hover:border-orange-button'><Link to='/'> Digital Marketing</Link></span>
-              </p>
-              <div className="absolute bottom-0 left-0 flex space-x-6 xl:mx-20 mx-6">
-              {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-900 hover:text-gray-800">
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-8 w-8" aria-hidden="true" />
-                </a>
-              ))}
-              </div>
+          
+          </span>.
+        </h1>
+        <div className="lg:flex">
+            <div className="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
+                <p className="sm:text-lg text-white dark:text-gray-300 lg:w-11/12">
+                    DailyBot takes chat and collaboration to the next level: daily standups, team check-ins, surveys, kudos, best companion bot for your virtual watercooler, 1:1 intros, motivation tracking and more.
+                </p>
+                <span className="block font-semibold text-white dark:text-gray-400">
+                  The best companion bot for your chat app.
+                </span>
+                <div className="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">
+                    <a aria-label="add to slack" href="/#" className="p-4 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 rounded-full duration-300 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-600/20 dark:hover:border-cyan-300/30">
+                        <div className="flex justify-center space-x-4">
+                            <img className="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/slack.png" alt="slack logo" loading="lazy" width="128" height="128"/>
+                            
+                        </div>
+                    </a>    
+                    <a aria-label="add to chat" href="/#" className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30">
+                        <div className="flex justify-center space-x-4">
+                            <img className="w-6 h-6" src="https://tailus.io/sources/blocks/tech-startup/preview/images/chat.png" alt="chat logo" loading="lazy" width="128" height="128"/>
+                            
+                        </div>
+                    </a>   
+                    <a aria-label="add to zoom" href="#" className="p-4 border border-gray-200 dark:bg-gray-800  dark:border-gray-700 rounded-full duration-300 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-600/20 dark:hover:border-blue-300/30">
+                        <div className="flex justify-center space-x-4">
+                            
+                            <Facebook className="w-6 h-6"  alt="chat logo" loading="lazy" width="128" height="128"/>
+                        </div>
+                    </a>    
+                </div>
+
+                {/* <div className="dark:text-gray-300">
+                    🔥🌟 
+                    <span>Other integrations :</span> 
+                    <a href="/#" className="font-semibold text-gray-700 dark:text-gray-200">Discord,</a>
+                    <a href="/#" className="font-semibold text-gray-700 dark:text-gray-200">Telegram</a>
+                </div>
+
+                <div className="pt-12 flex gap-6 lg:gap-12 justify-between grayscale lg:w-2/3">
+                    <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/airbnb.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/ge.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/coty.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                    <img src="https://tailus.io/sources/blocks/tech-startup/preview/images/clients/microsoft.svg" className="h-8 sm:h-10 w-auto lg:h-12" alt="" />
+                </div> */}
+                <div></div>
             </div>
-            <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
-              <img src="https://bafybeicgamofiuvkc6wjxl4wwzzh6pdovhcvvyc2gw5verruiolnykzz3i.ipfs.w3s.link/bbub3.jpg" className='w-full h-full object-cover'/>
+            <div className=" md:mt-10 lg:absolute -right-36 lg:w-7/12">
+                <div className="relative w-full">
+                    <div aria-hidden="true" className="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-laranjaneon to-laranjaneon blur-3xl"></div>
+                    <img src={perfils} className="relative w-full lg:-mt-96" alt="wath illustration" loading="lazy" width="320" height="280"/>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </main>
-    )
+    </div>
+  </div>
+  )
 }
 
 export default Header
+
+
+
+function Facebook() {
+  return (
+    <svg fill="#000000" viewBox="0 0 24 24" >
+    <path
+      fillRule="evenodd"
+      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+      clipRule="evenodd"
+    />
+  </svg>
+  )
+}
