@@ -74,15 +74,7 @@ export const navLinksdata= [
     icon: IconOne,
 
   },
-  {
-    _id: 1007,
-    title: 'Contato',
-    //description: 'Keep track of your growth',
-    link: "/contato",
-    description: 'Keep track of your growth',
-    icon: IconOne,
 
-  },
 ]
 
 

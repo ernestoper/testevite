@@ -311,7 +311,7 @@ const posts = [
     },
 
   ]
-function UseCases() {
+function Serviciosed() {
   return (
     <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 bg-gradient-to-r from-pretoneon via-pretoneon to-laranjaneon">
     <div className="absolute inset-0">
@@ -330,7 +330,7 @@ function UseCases() {
             <div className="flex-shrink-0">
               <img className="h-30 w-full object-cover" src={post.imageUrl} alt="" />
             </div>
-            {/* <div className="flex flex-1 flex-col justify-between p-6">
+            <div className="flex flex-1 flex-col justify-between p-6">
               <div className="flex-1">
                 <p className="text-sm font-medium text-indigo-600">
                   <a href={post.category.href} className="hover:underline">
@@ -343,7 +343,7 @@ function UseCases() {
                 </a>
               </div>
 
-            </div> */}
+            </div>
           </div>
         ))}
       </div>
@@ -352,4 +352,4 @@ function UseCases() {
   )
 }
 
-export default UseCases
+export default Serviciosed

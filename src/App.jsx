@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
 import Contact from './containers/pages/Contact';
 import Home from './containers/pages/Home';
+import Mim from './containers/pages/Mim';
 import Portfolio from './containers/pages/Portfolio';
 import Servicos from './containers/pages/Servicos';
 
@@ -14,6 +15,7 @@ function App() {
         <Route exact path='/servicos' element={<Servicos/>}/>
         <Route exact path='/portfolio' element={<Portfolio/>}/>
         <Route exact path='/contato' element={<Contact/>}/>
+        <Route exact path='/mim' element={<Mim/>}/>
         
       </Routes>
     </Router>
