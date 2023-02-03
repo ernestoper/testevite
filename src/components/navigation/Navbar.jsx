@@ -42,7 +42,7 @@ const Navbar = () => {
               className=""
               key={_id}
             >
-              <Link className='px-4 h-12  rounded-full items-center text-lg inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-transparent hover:bg-orange-500 transition duration-300 ease-in-out'
+              <Link className='px-4 h-12 hover:text-indigo-700 hover:shadow-lg hover:shadow-orange-300 hover:-translate-x-1 hover:scale-110 delay-150 rounded-full items-center text-lg inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-transparent hover:bg-orange-500 transition duration-300 ease-in-out'
                 // activeClass="active"
                 to={link}
                 // spy={true}
@@ -66,11 +66,11 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
+                {/* <p className="text-sm text-gray-400 mt-2">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Earum soluta perspiciatis molestias enim cum repellat, magnam
                   exercitationem distinctio aliquid nam.
-                </p>
+                </p> */}
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
