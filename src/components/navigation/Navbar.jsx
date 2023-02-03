@@ -42,7 +42,7 @@ const Navbar = () => {
               className=""
               key={_id}
             >
-              <Link className='px-4 h-12 hover:text-indigo-700 hover:shadow-lg hover:shadow-orange-300 hover:-translate-x-1 hover:scale-110 delay-150 rounded-full items-center text-lg inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-transparent hover:bg-orange-500 transition duration-300 ease-in-out'
+              <Link className='px-4 h-12 hover:text-indigo-700 hover:border-2 hover:border-white hover:shadow-lg hover:shadow-orange-300 hover:-translate-x-1 hover:scale-110 delay-150 rounded-full items-center text-lg inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-transparent hover:bg-orange-500 transition duration-300 ease-in-out'
                 // activeClass="active"
                 to={link}
                 // spy={true}

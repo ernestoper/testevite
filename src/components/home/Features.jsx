@@ -19,11 +19,11 @@ const features = [
 ]
 function Features() {
   return (
-    <div className="bg-white bg-gradient-to-r from-pretoneon via-pretoneon to-laranjaneon">
+    <div className="bg-white bg-gradient-to-b from-pretoneon via-pretoneon to-laranjaneon">
     <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
       <div>
-        <h2 className="text-lg font-semibold text-indigo-600">Everything you need</h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900">All-in-one platform</p>
+        <h2 className="text-lg font-semibold hover:animate-bounce text-indigo-600">Everything you need</h2>
+        <p className="mt-2 text-3xl font-bold tracking-tight hover:animate-bounce text-white">All-in-one platform</p>
         <p className="mt-4 text-lg text-gray-500">
           Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
         </p>

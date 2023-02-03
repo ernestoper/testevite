@@ -313,7 +313,7 @@ const posts = [
   ]
 function UseCases() {
   return (
-    <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 bg-gradient-to-r from-pretoneon via-pretoneon to-laranjaneon">
+    <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28 bg-gradient-to-b from-laranjaneon via-pretoneon to-pretoneon">
     <div className="absolute inset-0">
       <div className="h-1/3  sm:h-2/3" />
     </div>
@@ -326,7 +326,7 @@ function UseCases() {
       </div>
       <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
         {posts.map((post) => (
-          <div key={post._id} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <div key={post._id} className="flex flex-col overflow-hidden  shadow-sm rounded-lg shadow-orange-700">
             <div className="flex-shrink-0">
               <img className="h-30 w-full object-cover" src={post.imageUrl} alt="" />
             </div>

@@ -130,7 +130,7 @@ const posts_design  = [
 ]
 function Incentives() {
   return (
-    <div className="bg-blue-800  bg-gradient-to-t from-laranjaneon via-laranjaneon to-orange-900">
+    <div className="bg-blue-800  bg-gradient-to-t from-laranjaneon md:from-laranjaneon via-laranjaneon md:via-laranjaneon to-orange-900 md:to-orange-900">
     <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
       <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
         <div className="max-w-3xl">
@@ -143,15 +143,15 @@ function Incentives() {
             clarify in the small print but hope people don't actually read it.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3 ">
+        <div className="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3   ">
           {posts_design.map((posts_design) => (
-            <div key={posts_design._id} className="sm:flex lg:block">
+            <div key={posts_design._id} className="sm:flex lg:block shadow-sm rounded-lg shadow-orange-700">
               <div className="sm:flex-shrink-0">
-                <img className="h-16 w-16" src={posts_design.img} alt="" />
+                <img className="h-16 w-16 animate-bounce" src={posts_design.img} alt="" />
               </div>
               <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
-                <h3 className="text-sm font-medium  text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">{posts_design.title}</h3>
-                <p className="mt-2 text-sm text-white">{posts_design.description}</p>
+                <h3 className="text-lg font-medium  text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">{posts_design.title}</h3>
+                <p className="mt-2 text-sm text-white ">{posts_design.description}</p>
               </div>
             </div>
           ))}
