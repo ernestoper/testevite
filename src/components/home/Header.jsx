@@ -1,7 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
 import fundo from '../../assets/img/fundo/fundo.png';
-import perfil from '../../assets/img/fundo/perfil1.png';
+import perfilh from '../../assets/img/fundo/home.png';
 import perfils from '../../assets/img/fundo/semfundo.png';
 const navigation = {
   solutions: [
@@ -158,10 +158,10 @@ function Header(){
                 </div> */}
                 
             </div>
-            <div className=" mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
+            <div className=" md:mt-0 lg:absolute  -right-10 lg:w-6/12">
                 <div className="relative w-full">
-                    <div aria-hidden="true" className="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-laranjaneon to-laranjaneon blur-3xl"></div>
-                    <img src={perfils} className="    lg:-mt-80 relative w-full" alt="wath illustration" loading="lazy"/>
+                    <div aria-hidden="true" className="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-r from-orange-500 to-orange-300 blur-2xl"></div>
+                    <img src={perfilh} className=" lg:-mt-56 ml-12 relative w-4/6" alt="wath illustration" loading="lazy" width="320" height="280"/>
                 </div>
             </div>
         </div>

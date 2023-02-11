@@ -3,7 +3,6 @@ import { Link} from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-// import {logo} from "../../assets/index"
 import logo from '../../assets/img/portfolio/LOGOCORES/LOGOBRANCA.png';
 import { navLinksdata } from '../../constants';
 import HashLoader from "react-spinners/HashLoader";
@@ -31,18 +30,18 @@ const Navbar = () => {
   }
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="w-full h-24 sticky  top-0 z-50 bg-pretoneon mx-auto flex justify-between items-center font-sm border-b-[1px] border-b-gray-600">
+    <div className="w-full h-24 sticky  top-0 z-50 bg-pretoneon mx-auto flex justify-between items-center font-lg shadow-md shadow-orange-900">
       <div className='lg:ml-8 '>
         <img src={logo} alt="logo" className='lg:h-32 lg:w-44 h-28 w-36' />
       </div>
-      <div className='bg-bege rounded-full flex-shrink-0  flex-wrap items-center justify-between'>
+      <div className='bg-bege rounded-full flex-shrink-0 shadow-lg shadow-orange-900  flex-wrap items-center justify-between'>
         <ul className="hidden mdl:inline-flex ">
           {navLinksdata.map(({ _id, title, link }) => (
             <div
               className=""
               key={_id}
             >
-              <Link className='px-4 h-12 hover:text-indigo-700 hover:border-2 hover:border-white hover:shadow-lg hover:shadow-orange-300 hover:-translate-x-1 hover:scale-110 delay-150 rounded-full items-center text-lg inline-flex font-semibold leading-6 text-gray-900 border-b-2 border-transparent hover:bg-orange-500 transition duration-300 ease-in-out'
+              <Link className='px-4 h-12 hover:text-indigo-700 hover:border-2 hover:border-white  hover:-translate-x-1 hover:scale-110 delay-150 rounded-full items-center text-lg inline-flex font-semibold leading-6 text-gray-900   hover:bg-orange-500 transition duration-300 ease-in-out'
                 // activeClass="active"
                 to={link}
                 // spy={true}
@@ -123,7 +122,7 @@ const Navbar = () => {
           <Link
               to='/contato'
                   type= 'button'
-                  className=" hidden  hover:border-2 hover:border-white relative md:inline-flex items-center rounded-full  bg-salmao px-2  text-xl font-medium text-white shadow-sm hover:bg-laranjaneon focus:outline-none focus:ring-2 focus:ring-transparent "
+                  className=" hidden  hover:border-2 hover:border-white relative md:inline-flex items-center rounded-full  bg-orange-500 px-2  text-xl font-medium text-white shadow-sm hover:bg-laranjaneon focus:outline-none focus:ring-2 focus:ring-transparent "
                 >
                   Contato
                   <HashLoader className=" ml-3 mr-1 h-5 w-6 mt-2 mb-2" loading={loading} size={30} color="#f2f2f2" />

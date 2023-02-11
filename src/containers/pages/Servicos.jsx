@@ -214,6 +214,7 @@ function Servicos() {
   return (
     <Layout>
       <Navbar/>
+      <Header/>
       <div  className='bg-gradient-to-t from-orange-900 via-pretoneon  to-orange-500 '>
         <ServicesList posts={posts_design} section_title={'Design Services'}/>
       </div>

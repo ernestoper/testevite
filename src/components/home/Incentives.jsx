@@ -147,11 +147,11 @@ function Incentives() {
           {posts_design.map((posts_design) => (
             <div key={posts_design._id} className="sm:flex lg:block shadow-sm rounded-lg shadow-orange-700">
               <div className="sm:flex-shrink-0">
-                <img className="h-16 w-16 animate-bounce" src={posts_design.img} alt="" />
+                <img className="mx-40 h-16 w-16 animate-bounce" src={posts_design.img} alt="" />
               </div>
               <div className="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
-                <h3 className="text-lg font-medium  text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">{posts_design.title}</h3>
-                <p className="mt-2 text-sm text-white ">{posts_design.description}</p>
+                <h3 className="text-lg font-medium text-center   text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">{posts_design.title}</h3>
+                <p className="mt-2 text-sm text-justify text-white ">{posts_design.description}</p>
               </div>
             </div>
           ))}
