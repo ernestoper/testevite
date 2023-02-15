@@ -30,9 +30,9 @@ const Navbar = () => {
   }
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="w-full h-24 sticky  top-0 z-50 bg-pretoneon mx-auto flex justify-between items-center font-lg shadow-md shadow-orange-900">
-      <div className='lg:ml-8 '>
-        <img src={logo} alt="logo" className='lg:h-32 lg:w-44 h-28 w-36' />
+    <div className="w-full h-24 sticky pr-5 top-0 z-50 bg-pretoneon mx-auto flex justify-between items-center font-lg shadow-md shadow-orange-900">
+      <div className='lg:ml-8'>
+        <img src={logo} alt="logo" className='lg:h-32 lg:w-44 h-20 w-32' />
       </div>
       <div className='bg-bege rounded-full flex-shrink-0 shadow-lg shadow-orange-900  flex-wrap items-center justify-between'>
         <ul className="hidden mdl:inline-flex ">
@@ -65,11 +65,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />
-                {/* <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
-                </p> */}
+
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
