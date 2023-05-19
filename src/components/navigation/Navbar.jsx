@@ -3,7 +3,7 @@ import { Link} from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import logo from '../../assets/img/portfolio/LOGOCORES/LOGOBRANCA.png';
+import logo from '../../assets/img/portfolio/LOGOCORES/logo.png';
 import { navLinksdata } from '../../constants';
 import HashLoader from "react-spinners/HashLoader";
 import { Popover, Transition } from '@headlessui/react'
@@ -30,18 +30,21 @@ const Navbar = () => {
   }
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="w-full h-24 sticky pr-5 top-0 z-50 bg-pretoneon mx-auto flex justify-between items-center font-lg shadow-md shadow-orange-900">
-      <div className='lg:ml-8'>
-        <img src={logo} alt="logo" className='lg:h-32 lg:w-44 h-20 w-32' />
+    <div className="w-full h-24 sticky pr-5 top-0 z-50 bg-pretoneon mx-auto flex justify-between items-center font-lg shadow-md shadow-azulforte">
+      <div className='lg:ml-12 ml-2 '>
+        <img src={logo} alt="logo" className='lg:h-20 lg:w-44 h-20 w-32' />
       </div>
-      <div className='bg-bege rounded-full flex-shrink-0 shadow-lg shadow-orange-900  flex-wrap items-center justify-between'>
+      <div className='bg-gradient-to-r from-roxosombra via-rosapink via-azulforte to-azulciano hover:opacity-200 rounded-full flex-shrink-0   flex-wrap items-center justify-between'>
         <ul className="hidden mdl:inline-flex ">
           {navLinksdata.map(({ _id, title, link }) => (
             <div
               className=""
               key={_id}
             >
-              <Link className='px-4 h-12 hover:text-indigo-700 hover:border-2 hover:border-white  hover:-translate-x-1 hover:scale-110 delay-150 rounded-full items-center text-lg inline-flex font-semibold leading-6 text-gray-900   hover:bg-orange-500 transition duration-300 ease-in-out'
+              <Link className=' px-4 h-12 hover:text-white hover:border-2 hover:border-white  
+                               hover:-translate-x-1 hover:scale-110 delay-10 rounded-full 
+                               items-center text-lg inline-flex font-semibold leading-6 
+                               text-white   hover:bg-gradient-to-r hover:from-azulforte hover:via-azulciano hover:via-azulciano hover:to-rosapink  transition duration-300 ease-in-out'
                 // activeClass="active"
                 to={link}
                 // spy={true}
@@ -113,15 +116,16 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div className='hidden mr-8  rounded-full hover:bg-orange-600 mdl:inline-flex items-center gap-6 lg:gap-10  text-white' >
+      <div className='hidden mr-8   rounded-full  mdl:inline-flex items-center gap-6 lg:gap-10  text-white' >
           <div>
           <Link
               to='/contato'
                   type= 'button'
-                  className=" hidden  hover:border-2 hover:border-white relative md:inline-flex items-center rounded-full  bg-orange-500 px-2  text-xl font-medium text-white shadow-sm hover:bg-laranjaneon focus:outline-none focus:ring-2 focus:ring-transparent "
+                  //className=" hidden  hover:border-2 hover:border-white relative md:inline-flex items-center rounded-full  bg-orange-500 px-2  text-xl font-medium text-white shadow-sm hover:bg-laranjaneon focus:outline-none focus:ring-2 focus:ring-transparent "
+                className='btn  rounded-full font-primary text-white font-bold h-[50px] px-6 text-lg'
                 >
                   Contato
-                  <HashLoader className=" ml-3 mr-1 h-5 w-6 mt-2 mb-2" loading={loading} size={30} color="#f2f2f2" />
+                  <HashLoader className=" ml-4  h-4 w-4  mt-3 " loading={loading} size={20} color="#f2f2f2" />
                   
               </Link>
 

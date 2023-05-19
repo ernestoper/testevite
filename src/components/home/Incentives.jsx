@@ -130,28 +130,24 @@ const posts_design  = [
 ]
 function Incentives() {
   return (
-    <div className="bg-blue-800  bg-gradient-to-t from-laranjaneon md:from-laranjaneon via-laranjaneon md:via-laranjaneon to-orange-900 md:to-orange-900">
+    <div className="  bg-purple-50">
     <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
       <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
         <div className="max-w-3xl">
-          <span className="text-4xl font-bold tracking-tight  text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300 ">
+          <span className="text-4xl font-bold text-azulforte ">
             We built our business on customer service
           </span>
-          <p className="mt-4 text-white">
-            At the beginning at least, but then we realized we could make a lot more money if we kinda stopped caring
-            about that. Our new strategy is to write a bunch of things that look really good in the headlines, then
-            clarify in the small print but hope people don't actually read it.
-          </p>
+
         </div>
-        <div className="mt-16  grid grid-cols-1 gap-y-8 gap-x-8 lg:grid-cols-3   ">
+        <div className="mt-16  grid grid-cols-1 gap-y-16 gap-x-16 lg:grid-cols-3   ">
           {posts_design.map((posts_design) => (
-            <div key={posts_design._id} className="sm:flex lg:block   shadow-sm rounded-lg shadow-orange-700">
+            <div key={posts_design._id} className="sm:flex lg:block   shadow-lg rounded-lg shadow-gray-500">
               <div className="flex-shrink-0 ">
-                <img className=" h-16 w-16 animate-bounce" src={posts_design.img} alt="" />
+                <img className=" h-20 w-20 lg:ml-28 lg:mt-8 mt-8 ml-8 animate-bounce" src={posts_design.img} alt="" />
               </div>
-              <div className="mt-4 pt-20  lg:pt-0 sm:mt-0  lg:mt-6 lg:ml-0">
-                <h3 className="text-lg font-medium text-justify -ml-16  text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">{posts_design.title}</h3>
-                <p className="mt-2 text-sm text-justify text-black -ml-16">{posts_design.description}</p>
+              <div className="lg:pt-2 lg:pl-24 lg:pr-6 lg:mb-6  ml-0 mb-6 pt-28 pr-8">
+                <h3 className="text-lg font-medium text-justify   text-transparent bg-clip-text bg-gradient-to-r from-azulforte via-rosapink to-roxosombra">{posts_design.title}</h3>
+                <p className="mt-2 text-sm text-justify text-black -ml-20">{posts_design.description}</p>
               </div>
             </div>
           ))}

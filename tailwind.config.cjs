@@ -40,7 +40,15 @@ module.exports = {
         "azulneon":'#07C7F2',
         "vermelho":'#A6033F',
         "navb":'#3098F2',
-        "cinzaed":'#3E3E3E'
+        "cinzaed":'#3E3E3E',
+        "azuldio":"#1e192c",
+        "roxosombra":"#b936ee",
+        "azulciano":"#3bace2",
+        "azulmarinho":"#1e192c",
+        "azulroxo":"#430261",
+        "azulroxoclaro":"#29013b",
+        "rosapink":"#ff56f6 ",
+        "azulforte":"#406aff"
       },
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px -10px 19px #262a2e",

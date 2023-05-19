@@ -29,7 +29,7 @@ const navigation = {
     {
       name: 'Facebook',
       href: '#',
-      color:'text-blue-900',
+      color:'text-white',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -43,7 +43,7 @@ const navigation = {
     {
       name: 'Instagram',
       href: '#',
-      color:'text-red-300',
+      color:'text-white',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -57,7 +57,7 @@ const navigation = {
     {
       name: 'Twitter',
       href: '#',
-      color:'text-blue-600',
+      color:'text-white',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -67,7 +67,7 @@ const navigation = {
     {
       name: 'GitHub',
       href: '#',
-      color:'text-gray-700',
+      color:'text-white',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -85,12 +85,12 @@ function Header(){
 
   return (
 
- <div className="bg-pretoneon relative pt-40 pb-20 lg:pt-44  bg-gradient-to-t from-orange-900 via-pretoneon  to-pretoneon">
+ <div className="bg-azuldio relative pt-40 pb-20 lg:pt-44  ">
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-        <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-200 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
+        <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-azulciano text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl ">
         Olá, sou Edson <span> </span>
           <br className="lg:block hidden"/> 
-          <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-500  ">
+          <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-roxosombra to-roxosombra  ">
             
             <Typewriter
                         words={[' Designer']}
@@ -117,7 +117,7 @@ function Header(){
 
                 <div className="grid grid-cols-4  md:space-x-2 md:flex md:justify-center lg:justify-start ">
                     {navigation.social.map((item) => (
-                      <a key={item.name} href={item.href} aria-label="add to slack"  className="p-4   rounded-full duration-300 hover:border-orange-200 hover:shadow-xl hover:shadow-purple-200 dark:hover:border-cyan-300/3">
+                      <a key={item.name} href={item.href} aria-label="add to slack"  className="p-4   rounded-full duration-300 hover:border-azulforte hover:shadow-xl hover:shadow-azulforte ">
                         {/* <span className="sr-only">{item.name}</span> */}
                         <item.icon className={`h-10 w-10 ${item.color} hover:animate-bounce  " aria-hidden="true" alt="slack logo" loading="lazy`} />
                       </a>

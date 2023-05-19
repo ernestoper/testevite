@@ -19,12 +19,12 @@ const features = [
 ]
 function Features() {
   return (
-    <div className="bg-white bg-gradient-to-b from-pretoneon via-pretoneon to-laranjaneon">
+    <div className="bg-white bg-gradient-to-b from-pretoneon via-pretoneon  via-pretoneon to-gray-800">
     <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
       <div>
-        <h2 className="text-lg font-semibold hover:animate-bounce text-indigo-600">Everything you need</h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight hover:animate-bounce text-white">All-in-one platform</p>
-        <p className="mt-4 text-lg text-gray-500">
+        <h2 className="text-lg font-semibold hover:animate-bounce text-transparent bg-clip-text bg-gradient-to-r from-azulforte via-rosapink to-roxosombra ">Everything you need</h2>
+        <p className="mt-2 text-3xl font-bold tracking-tight hover:animate-bounce text-transparent bg-clip-text bg-gradient-to-r from-azulforte via-rosapink to-roxosombra">All-in-one platform</p>
+        <p className="mt-4 text-lg text-white">
           Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
         </p>
       </div>
@@ -34,9 +34,9 @@ function Features() {
             <div key={feature.name} className="relative">
               <dt>
                 <img className=" h-6 w-4" aria-hidden="true"  src={CheckIcon}/>
-                <p className="ml-9 text-lg font-medium leading-6 text-gray-900">{feature.name}</p>
+                <p className="ml-9 text-lg font-medium leading-6 text-transparent bg-clip-text bg-gradient-to-r from-azulforte via-rosapink to-roxosombra">{feature.name}</p>
               </dt>
-              <dd className="mt-2 ml-9 text-base text-gray-500">{feature.description}</dd>
+              <dd className="mt-2 ml-9 text-base text-white">{feature.description}</dd>
             </div>
           ))}
         </dl>
