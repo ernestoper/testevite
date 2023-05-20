@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link} from "react-router-dom";
 function CTA() {
   return (
 <div className="bg-gradient-to-t from-pretoneon via-pretoneon to-pretoneon">
@@ -10,8 +10,8 @@ function CTA() {
         </h2>
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <div className="inline-flex rounded-md shadow">
-            <a
-              href="/contato"
+            <Link
+              to="/contato"
               className="inline-flex items-center justify-center rounded-md  
               px-5 py-3 text-base font-medium text-white 
               bg-gradient-to-r from-rosapink via-roxosombra via-azulciano to-azulforte
@@ -19,11 +19,11 @@ function CTA() {
               hover:via-azulciano hover:to-rosapink "
             >
               Contato
-            </a>
+            </Link>
           </div>
           <div className="ml-3 inline-flex rounded-md shadow">
-            <a
-              href="/contato"
+            <Link              
+              to="/contato"
               className="inline-flex items-center 
               justify-center rounded-md  bg-white 
               px-5 py-3 text-base font-medium text-white
@@ -33,7 +33,7 @@ function CTA() {
               "
             >
               Saber Mais
-            </a>
+            </Link>
           </div>
         </div>
       </div>
