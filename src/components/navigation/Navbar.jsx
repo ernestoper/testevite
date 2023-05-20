@@ -30,9 +30,9 @@ const Navbar = () => {
   }
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="w-full h-24 sticky pr-5 top-0 z-50 bg-pretoneon mx-auto flex justify-between items-center font-lg shadow-md shadow-azulforte">
-      <div className='lg:ml-12 ml-2 '>
-        <img src={logo} alt="logo" className='lg:h-20 lg:w-44 h-20 w-32' />
+    <div className="lg:w-full lg:h-24 flex pr-5 top-0 z-50 bg-pretoneon justify-between items-center font-lg shadow-md shadow-azulforte">
+      <div className='lg:ml-12 ml-4 '>
+        <img src={logo} alt="logo" className='lg:h-20 lg:w-44 h-14 w-18' />
       </div>
       <div className='bg-gradient-to-r from-roxosombra via-rosapink via-azulforte to-azulciano hover:opacity-200 rounded-full flex-shrink-0   flex-wrap items-center justify-between'>
         <ul className="hidden mdl:inline-flex ">
@@ -67,7 +67,7 @@ const Navbar = () => {
           <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-gray-900 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <img className="w-32" src={logo} alt="logo" />
+                <img className="w-20" src={logo} alt="logo" />
 
               </div>
               <ul className="flex flex-col gap-4">

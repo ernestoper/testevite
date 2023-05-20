@@ -16,7 +16,7 @@ function Home() {
     <Layout>
       <Navbar/>
       <div  className=''>
-        <Header/>
+        {/* <Header/> */}
         <Incentives/>
         <UseCases/>
         <Features/>

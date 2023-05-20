@@ -145,9 +145,9 @@ function Incentives() {
               <div className="flex-shrink-0 ">
                 <img className=" h-20 w-20 lg:ml-28 lg:mt-8 mt-8 ml-8 animate-bounce" src={posts_design.img} alt="" />
               </div>
-              <div className="lg:pt-2 lg:pl-24 lg:pr-6 lg:mb-6  ml-0 mb-6 pt-28 pr-8">
-                <h3 className="text-lg font-medium text-justify   text-transparent bg-clip-text bg-gradient-to-r from-azulforte via-rosapink to-roxosombra">{posts_design.title}</h3>
-                <p className="mt-2 text-sm text-justify text-black -ml-20">{posts_design.description}</p>
+              <div className="lg:pt-2 lg:pl-24 lg:pr-6 lg:mb-6  ml-0 mb-6 pt-4 pr-8">
+                <h3 className="lg:-ml-20 ml-6 sm:pt-6  text-lg font-medium   text-transparent bg-clip-text bg-gradient-to-r from-azulforte via-rosapink to-roxosombra">{posts_design.title}</h3>
+                <p className="mt-2 text-sm text-justify text-black lg:-ml-20 sm:-ml-20 ml-6 sm:pt-10">{posts_design.description}</p>
               </div>
             </div>
           ))}
