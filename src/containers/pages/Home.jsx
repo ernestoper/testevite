@@ -21,7 +21,7 @@ function Home() {
         <Header/>
         <Incentives/>
         {/* <UseCases/> */}
-        <Listatestimonios/>
+        {/* <Listatestimonios/> */}
         <Features/>
         <CTA/>
       </div>
