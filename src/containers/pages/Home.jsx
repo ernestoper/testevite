@@ -8,6 +8,8 @@ import UseCases from '../../components/home/UseCases'
 import Footer from '../../components/navigation/Footer'
 import Navbar from '../../components/navigation/Navbar'
 import { useEffect } from "react"
+import Cases from '../../components/home/Cases'
+import Listatestimonios from '../../components/home/Listatestimonios'
 function Home() {
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -18,7 +20,8 @@ function Home() {
       <div  className=''>
         <Header/>
         <Incentives/>
-        <UseCases/>
+        {/* <UseCases/> */}
+        <Listatestimonios/>
         <Features/>
         <CTA/>
       </div>
