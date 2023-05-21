@@ -10,6 +10,7 @@ import Navbar from '../../components/navigation/Navbar'
 import { useEffect } from "react"
 import Cases from '../../components/home/Cases'
 import Listatestimonios from '../../components/home/Listatestimonios'
+import Carrousel from '../../components/home/Carrousel'
 function Home() {
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -21,7 +22,7 @@ function Home() {
         <Header/>
         <Incentives/>
         {/* <UseCases/> */}
-        {/* <Listatestimonios/> */}
+        <Carrousel/>
         <Features/>
         <CTA/>
       </div>
