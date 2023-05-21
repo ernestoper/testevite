@@ -1,5 +1,5 @@
 import Casetes from "./Casetes"
-//import Carousel from '@itseasy21/react-elastic-carousel';
+import Carousel from '@itseasy21/react-elastic-carousel';
 
 function Listatestimonios(){
 
