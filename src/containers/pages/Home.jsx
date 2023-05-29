@@ -21,13 +21,12 @@ function Home() {
       <div  className=''>
         <Header/>
         <Incentives/>
-        {/* <UseCases/> */}
         <Carrousel/>
         <Features/>
         <CTA/>
       </div>
-
-      <Footer/>
+{/* 
+      <Footer/> */}
     </Layout>
   )
 }

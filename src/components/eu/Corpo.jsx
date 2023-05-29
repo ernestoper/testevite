@@ -84,14 +84,14 @@ function Corpo(){
 
     return(
         <main className='n'>
-        <div className="relative px-6 lg:px-8 bg-gradient-to-b from-orange-900 via-pretoneon  to-laranjaneon ">
+        <div className="relative px-2 lg:px-8 bg-gradient-to-b from-orange-900 via-pretoneon  to-laranjaneon ">
           <div className="mx-auto max-w-full xl:mx-12 xl:pt-32 xl:pb-40 lg:pt-40 lg:pb-40 pt-24 pb-12 ">
             
               <div>
                 <h1 className="text-4xl font-semibold text-center text-indigo-300 tracking-tight pb-8  sm:text-7xl">
                   Sobre Mim
                 </h1>
-                <p className="mt-6 lg:text-3xl text-lg leading-10 text-justify lg:mx-28 text-white  max-w-9xl">
+                <p className="mt-6 lg:text-3xl text-lg leading-10 text-justify lg:mx-28 text-white  max-w-6xl">
                 Ainda em 2020 senti necessidade de ir mais além, ou seja, realizar a união do campo acadêmico ao mundo do trabalho de tal forma que conclui de forma exitosa minha graduação na Faculdade dos Guararapes em 2022.  Desta forma fui possibilitando aos diversos desafios do campo. Durante minha jornada na graduação pude evidenciar que o Design é muito mais que uma ferramenta transformadora, afinal   a mesma apresenta valores sendo esta determinante ao futuro que uma empresa almeja alcançar, devo salientar que a ferramenta significa boa comunicação e significa boas vendas.
                 </p>
                 <div className="absolute bottom-0 left-0 flex space-x-6 xl:mx-48 mx-12">

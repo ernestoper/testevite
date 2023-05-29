@@ -65,15 +65,15 @@ export const navLinksdata= [
     icon: IconOne,
 
   },
-  { 
-    _id: 1006,
-    title: 'clientes',
-    //description: 'Keep track of your growth',
-    link: "/blog",
-    description: 'Keep track ',
-    icon: IconOne,
+  // { 
+  //   _id: 1006,
+  //   title: 'clientes',
+  //   //description: 'Keep track of your growth',
+  //   link: "/blog",
+  //   description: 'Keep track ',
+  //   icon: IconOne,
 
-  },
+  // },
 
 ]
 

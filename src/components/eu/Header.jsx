@@ -1,8 +1,5 @@
 import { Typewriter } from 'react-simple-typewriter'
-import { Link } from 'react-router-dom'
-import fundo from '../../assets/img/fundo/fundo.png';
-import perfil from '../../assets/img/fundo/perfil1.png';
-import perfils from '../../assets/img/fundo/semfundo.png';
+import eu from '../../assets/PRINCIPAL/TELA-QUEM-SOU-EU/eu.png';
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -85,7 +82,7 @@ function Header(){
 
   return (
 
- <div className="bg-pretoneon relative pt-40 pb-20 lg:pt-44  bg-gradient-to-t from-orange-900 via-pretoneon  to-pretoneon">
+ <div className="bg-azuldio relative pt-40 pb-20 lg:pt-44 ">
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
         <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-200 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white">
         Olá, sou Edson <span> </span>
@@ -108,7 +105,7 @@ function Header(){
           </span>.
         </h1>
         <div className="lg:flex ">
-            <div className="relative -pr-32 lg:pr-32 mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
+            <div className="relative  lg:pr-32 mt-4 space-y-4 w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
                 <p className="sm:text-lg text-white text-3xl  lg:w-11/12">
                 Minha jornada no universo multimaker se inicia ainda quando criança, 
                 afinal já apreciava passar minhas tardes elaborando edições de imagens e 
@@ -158,10 +155,10 @@ function Header(){
                 </div> */}
                 
             </div>
-            <div className=" mt-12 md:mt-0 lg:absolute -right-10 lg:w-7/12">
+            <div className=" lg:absolute  lg:right-28 -ml-8 w-11/12 lg:w-6/12">
                 <div className="relative w-full">
-                    <div aria-hidden="true" className="absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-laranjaneon to-laranjaneon blur-3xl"></div>
-                    <img src={perfils} className="    lg:-mt-80 relative w-full" alt="wath illustration" loading="lazy"/>
+                    <div aria-hidden="true" className=""></div>
+                    <img src={eu} className="lg:mt-20 lg:ml-16 ml-10 mt-10 relative w-full" alt="wath illustration" loading="lazy"/>
                 </div>
             </div>
         </div>

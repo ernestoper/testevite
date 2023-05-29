@@ -6,10 +6,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import logo from '../../assets/img/portfolio/LOGOCORES/logo.png';
 import { navLinksdata } from '../../constants';
 import HashLoader from "react-spinners/HashLoader";
-import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Fragment } from 'react'
-import { NavLink } from 'react-router-dom';
+
 
 
 
@@ -30,7 +27,7 @@ const Navbar = () => {
   }
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="lg:w-full lg:h-24 flex pr-5 top-0 z-50 bg-pretoneon sticky justify-between items-center font-lg shadow-b border-b-2 border-azulforte shadow-azulforte">
+    <div className="lg:w-full lg:h-24 h-14 flex pr-5 top-0 z-50 bg-pretoneon sticky justify-between items-center font-lg shadow-b border-b-2 border-azulforte shadow-azulforte">
       <div className='lg:ml-12 ml-4 '>
         <img src={logo} alt="logo" className='lg:h-20 lg:w-44 h-14 w-18' />
       </div>
@@ -108,7 +105,7 @@ const Navbar = () => {
               </div>
               <span
                 onClick={() => setShowMenu(false)}
-                className="absolute top-4 right-4 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
+                className="absolute top-4 right-0 text-gray-400 hover:text-designColor duration-300 text-2xl cursor-pointer"
               >
                 <MdClose />
               </span>

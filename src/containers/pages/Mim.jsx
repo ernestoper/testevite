@@ -16,8 +16,8 @@ function Mim() {
       <Navbar/>
       <div  className=''>
         <Header/>
-        <Corpo/>
-        <CTA/>
+        {/* <Corpo/> */}
+        {/* <CTA/> */}
       </div>
 
       <Footer/>

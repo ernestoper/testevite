@@ -3,9 +3,7 @@ import Layout from '../../components/hocs/layout/Layout'
 import Footer from '../../components/navigation/Footer'
 import Navbar from '../../components/navigation/Navbar'
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import { Switch } from '@headlessui/react'
-import { Link } from 'react-router-dom'
-import perfilh from '../../assets/img/fundo/contato.png';
+import contato from '../../assets/PRINCIPAL/TELA-CONTATO/contato.png';
 function Contact() {
     useEffect(()=>{
         window.scrollTo(0,0)
@@ -130,8 +128,8 @@ function Contact() {
 
                             <div className=" md:mt-0 lg:absolute  -right-10 lg:w-6/12">
                                 <div className="relative w-full lg:-mt-96 ">
-                                    <div aria-hidden="true" className="lg:ml-32 l lg:mb-4 absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-lg  bg-gradient-to-t from-orange-200 to-white blur-2xl "></div>
-                                      <img src={perfilh} className=" lg:mt-44 lg:ml-12 relative w-full" alt="wath illustration" loading="lazy" width="320" height="280"/>
+                                    <div aria-hidden="true" className="lg:ml-32 l lg:mb-4 absolute scale-75 md:scale-110 inset-0 m-auto lg:w-full lg:h-full w-96 h-96 rounded-lg  bg-gradient-to-t from-orange-200 to-white blur-2xl "></div>
+                                      <img src={contato} className=" lg:mt-40 lg:ml-0 relative w-full" alt="wath illustration" loading="lazy" width="320" height="280"/>
                                     </div>
                             </div>
                         </div>
