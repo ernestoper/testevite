@@ -1,6 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
-import home from '../../assets/PRINCIPAL/TELA-HOME/home.png';
+import home from '../../assets/PRINCIPAL/TELA-HOME/home-sem.png';
 
 const navigation = {
   solutions: [
@@ -139,10 +139,10 @@ function Header(){
 
                 </div> 
             </div>
-            <div className=" md:mt-0 lg:absolute  -right-10 lg:w-6/12">
+            <div className=" md:mt-0 lg:absolute  -right-10 lg:w-7/12">
                 <div className="relative w-full">
-                    <div aria-hidden="true" className="absolute scale-75 md:scale-75 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-r from-azuldio to-roxosombra blur-2xl"></div>
-                    <img src={home} className=" lg:-mt-60 lg:ml-12 ml-14 mt-8 relative w-4/6" alt="wath illustration" loading="lazy" width="320" height="280"/>
+                    <div aria-hidden="true" className="absolute lg:scale-150 lgl:scale-100 scale-80 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-azuldio to-roxosombra blur-2xl"></div>
+                    <img src={home} className=" lg:-mt-60 lg:ml-12  mdl:ml-36 ml-4 mt-8 relative lg:w-5/6 w-6/6 mdl:w-8/12" alt="wath illustration" loading="lazy" width="320" height="280"/>
                 </div>
             </div>
         </div>
