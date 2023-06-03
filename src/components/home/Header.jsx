@@ -2,8 +2,38 @@ import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
 import home from '../../assets/PRINCIPAL/TELA-HOME/home-sem.png';
 import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useFollowPointer } from "./useFollowPointer";
+
 // import { fadeIn, staggerContainer } from '../../utils/motion';
 // import { motion } from 'framer-motion';
+const staggerContainer = (staggerChildren, delayChildren) => ({
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren,
+      delayChildren,
+    },
+  },
+});
+const fadeIn = (direction, type, delay, duration) => ({
+  hidden: {
+    x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
+    y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+    opacity: 0,
+  },
+  show: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      type,
+      delay,
+      duration,
+      ease: 'easeOut',
+    },
+  },
+});
 
 const navigation = {
   solutions: [
@@ -99,11 +129,21 @@ const navigation = {
   ],
 }
 function Header(){
-
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
   return (
 
  <div className="bg-azuldio relative pt-12 pb-20 lg:pt-20  ">
+
+      <motion.span
+                ref={ref}
+                animate={{ x, y }}
+                className="hidden lg:block sec-1-bg-gradient-1-desktop md:w-[10px] 2xl:w-[140px] md:h-[10px] 2xl:h-[10px] absolute md:left-[10px] 2xl:left-[19px] -top-[79px]"
+      />
+
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
+
+
         {/* <div className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-azulciano text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl "
 
         >
@@ -128,13 +168,16 @@ function Header(){
         </div> */}
 
 
-        <div className="lg:flex ">
-            <div className="relative -pr-32 lg:pr-32 mt-2 md:mt-2 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
-                
-              <motion.div className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-azulciano lg:text-7xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl "
-                    initial={{ opacity: 0, scale: 3.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
+        <div className="lg:flex">
+            <div className=" relative -pr-32 lg:pr-32 mt-2 md:mt-2 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
+
+              <motion.div className=" flex-[0.75] flex justify-center flex-col  mx-auto w-10/12 md:w-6/3 font-black text-azulciano lg:text-7xl text-center text-5xl lg:w-auto lg:text-left xl:text-7xl "
+                    initial={{opacity:0}}
+                    //show={{x:0, y:0, opacity:1, transition:{type:'tween', delay:0.2, duration:1, ease: 'easeOut',}}}
+                    //animate={{ y: 0, opacity: 1 }}
+                    transition={{ type:'tween',delay:0.2, duration: 1.5,ease: 'easeOut' }}
+                    whileInView={{y: [-100, 0], opacity: 1}}  
+                    //variants={fadeIn('left', 'tween', 0.2, 1)}
                   >
                     Olá, sou Edson
                     <br className="lg:block hidden"/> 
@@ -159,8 +202,9 @@ function Header(){
                 
                 
               <motion.div  className=""
-                    initial={{ y: 300, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    //animate={{ y: 0, opacity: 1 }}
+                    whileInView={{y: [-100, 0], opacity: 1}}
                     transition={{ duration: 0.7, delay: 0.25 }}
               >
                       <h1 className='ml-4 sm:text-lg text-white text-3xl  lg:w-11/12'>
@@ -174,18 +218,21 @@ function Header(){
 
 
               <motion.div className="grid grid-cols-4  md:space-x-2 md:flex md:justify-center lg:justify-start "
-                          initial={{ x: 300, opacity: 0 }}
-                          animate={{ x: 0, opacity: 1 }}
+                          initial={{x:300, opacity: 0 }}
+                          //animate={{ x: 0, opacity: 1 }}
+                          whileInView={{x: [-300, 0], opacity: 1}}
                           transition={{ duration: 0.7, delay: 0.25 }}
               >
                     {navigation.social.map((item) => (
-                      <a key={item.name} href={item.href} aria-label="add to slack"  className="p-4   rounded-full duration-300 hover:border-azulforte hover:shadow-xl hover:shadow-azulforte ">
+                      <a key={item.name} href={item.href} aria-label="add to slack"  className="p-4  rounded-full duration-300 hover:border-azulforte hover:shadow-xl hover:shadow-azulforte ">
                         {/* <span className="sr-only">{item.name}</span> */}
                         <item.icon className={`h-10 w-10 ${item.color} hover:animate-bounce  " aria-hidden="true" alt="slack logo" loading="lazy`} />
                       </a>
                     ))}
 
               </motion.div> 
+
+
             </div>
 
 

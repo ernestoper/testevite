@@ -19,7 +19,7 @@ function Home() {
   return (
     <Layout>
       <Navbar/>
-      <div  className=''>
+      <div  className='overflow-hidden'>
         <Header/>
         <Incentives/>
         {/* <Carrousel/> */}
