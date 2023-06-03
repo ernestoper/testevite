@@ -11,6 +11,7 @@ import { useEffect } from "react"
 import Cases from '../../components/home/Cases'
 import Listatestimonios from '../../components/home/Listatestimonios'
 import Carrousel from '../../components/home/Carrousel'
+import Skills from '../../components/home/Skills'
 function Home() {
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -21,12 +22,13 @@ function Home() {
       <div  className=''>
         <Header/>
         <Incentives/>
-        <Carrousel/>
+        {/* <Carrousel/> */}
         <Features/>
+        <Skills/>        
         <CTA/>
       </div>
-{/* 
-      <Footer/> */}
+
+      <Footer/>
     </Layout>
   )
 }

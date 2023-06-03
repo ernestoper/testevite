@@ -1,6 +1,9 @@
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
 import home from '../../assets/PRINCIPAL/TELA-HOME/home-sem.png';
+import { motion } from "framer-motion";
+// import { fadeIn, staggerContainer } from '../../utils/motion';
+// import { motion } from 'framer-motion';
 
 const navigation = {
   solutions: [
@@ -99,10 +102,12 @@ function Header(){
 
   return (
 
- <div className="bg-azuldio relative pt-40 pb-20 lg:pt-44  ">
+ <div className="bg-azuldio relative pt-12 pb-20 lg:pt-20  ">
     <div className="relative xl:container m-auto px-6 md:px-12 lg:px-6">
-        <h1 className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-azulciano text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl ">
-        Olá, sou Edson <span> </span>
+        {/* <div className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-azulciano text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl "
+
+        >
+          Olá, sou Edson
           <br className="lg:block hidden"/> 
           <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-roxosombra to-roxosombra  ">
             
@@ -120,16 +125,59 @@ function Header(){
                     />
           
           </span>.
-        </h1>
-        <div className="lg:flex ">
-            <div className="relative -pr-32 lg:pr-32 mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
-                <p className="sm:text-lg text-white text-3xl  lg:w-11/12">
-                Minha jornada no universo multimaker se inicia ainda quando criança, 
-                afinal já apreciava passar minhas tardes elaborando edições de imagens e 
-                seus segmentos mais diversos...
-                </p>
+        </div> */}
 
-                <div className="grid grid-cols-4  md:space-x-2 md:flex md:justify-center lg:justify-start ">
+
+        <div className="lg:flex ">
+            <div className="relative -pr-32 lg:pr-32 mt-2 md:mt-2 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto   lg:-mr-20 lg:w-7/12">
+                
+              <motion.div className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-azulciano lg:text-7xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl "
+                    initial={{ opacity: 0, scale: 3.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    Olá, sou Edson
+                    <br className="lg:block hidden"/> 
+                    <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-roxosombra to-roxosombra  ">
+                      
+                      <Typewriter
+                                  words={[' Designer']}
+                                  loop={0}
+                                  cursor
+                                  
+                                  cursorStyle='_'
+                                  typeSpeed={120}
+                                  deleteSpeed={50}
+                                  delaySpeed={1000}
+                                  // onLoopDone={handleDone}
+                                  // onType={handleType}
+                              />
+                    
+                    </span>.
+
+              </motion.div>
+                
+                
+              <motion.div  className=""
+                    initial={{ y: 300, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.7, delay: 0.25 }}
+              >
+                      <h1 className='ml-4 sm:text-lg text-white text-3xl  lg:w-11/12'>
+                          Minha jornada no universo multimaker se inicia ainda quando criança, 
+                          afinal já apreciava passar minhas tardes elaborando edições de imagens e 
+                          seus segmentos mais diversos...
+                      </h1>
+
+              </motion.div>
+                
+
+
+              <motion.div className="grid grid-cols-4  md:space-x-2 md:flex md:justify-center lg:justify-start "
+                          initial={{ x: 300, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{ duration: 0.7, delay: 0.25 }}
+              >
                     {navigation.social.map((item) => (
                       <a key={item.name} href={item.href} aria-label="add to slack"  className="p-4   rounded-full duration-300 hover:border-azulforte hover:shadow-xl hover:shadow-azulforte ">
                         {/* <span className="sr-only">{item.name}</span> */}
@@ -137,12 +185,14 @@ function Header(){
                       </a>
                     ))}
 
-                </div> 
+              </motion.div> 
             </div>
+
+
             <div className=" md:mt-0 lg:absolute  -right-10 lg:w-7/12">
                 <div className="relative w-full">
                     <div aria-hidden="true" className="absolute lg:scale-150 lgl:scale-100 scale-80 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full  bg-gradient-to-b from-azuldio to-roxosombra blur-2xl"></div>
-                    <img src={home} className=" lg:-mt-60 lg:ml-12  mdl:ml-36 ml-4 mt-8 relative lg:w-5/6 w-6/6 mdl:w-8/12" alt="wath illustration" loading="lazy" width="320" height="280"/>
+                    <img src={home} className=" lg:-mt-20 lg:ml-12  mdl:ml-36 ml-4 mt-8 relative lg:w-5/6 w-6/6 mdl:w-8/12" alt="wath illustration" loading="lazy" width="320" height="280"/>
                 </div>
             </div>
         </div>

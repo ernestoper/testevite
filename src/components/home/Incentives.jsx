@@ -1,5 +1,5 @@
 import React from 'react'
-import logt from '../../assets/img/portfolio/ICONS/LOGT.png';
+import logt from '../../assets/PRINCIPAL/ICONS/LOGO-AZUL-CLARO.png';
 import idv from '../../assets/img/portfolio/ICONS/IDV.png';
 import imp from '../../assets/img/portfolio/ICONS/IMP.png';
 import wb from '../../assets/img/portfolio/ICONS/WB.png';
