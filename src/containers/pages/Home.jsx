@@ -12,6 +12,8 @@ import Cases from '../../components/home/Cases'
 import Listatestimonios from '../../components/home/Listatestimonios'
 import Carrousel from '../../components/home/Carrousel'
 import Skills from '../../components/home/Skills'
+import Trabajos from '../../components/home/Trabajos'
+import Achievements from '../../components/home/Achievements'
 function Home() {
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -22,9 +24,9 @@ function Home() {
       <div  className='overflow-hidden'>
         <Header/>
         <Incentives/>
-        {/* <Carrousel/> */}
         <Features/>
-        <Skills/>        
+        <Trabajos/> 
+        <Achievements/>     
         <CTA/>
       </div>
 

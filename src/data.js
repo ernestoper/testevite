@@ -1,9 +1,9 @@
-import p1 from "../../assets-test/project-1.png";
-import p2 from "../../assets-test/project-2.png";
-import p3 from "../../assets-test/project-3.png";
-import p4 from "../../assets-test/project-4.png";
-import p5 from "../../assets-test/project-5.png";
-import p6 from "../../assets-test/project-6.png";
+import p1 from "./assets-test/project-1.png";
+import p2 from "./assets-test/project-2.png";
+import p3 from "./assets-test/project-3.png";
+import p4 from "./assets-test/project-4.png";
+import p5 from "./assets-test/project-5.png";
+import p6 from "./assets-test/project-6.png";
 
 export const filters = [
     {
@@ -60,17 +60,17 @@ export const projects = [
 export const achievements = [
     {
         id: 1,
-        year: 25,
+        year: 80,
         description: "SUCCESSFULLY<br />COMPLETED<br />PROJECTS",
     },
     {
         id: 2,
-        year: 3,
+        year: 15,
         description: "YEARS OF<br />EXPERIENCE",
     },
     {
         id: 3,
-        year: 5,
+        year: 25,
         description: "TECHNOLOGIES",
     },
     {

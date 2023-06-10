@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         notification
         avatar={logo}
         statusMessage="Respondo rapido"
-        chatMessage="Oi tudo bom? 🤝 como posoo lhe ajudar?"
+        chatMessage="Oi tudo bom? 🤝 como posso lhe ajudar?"
         notificationSound/>
 
   </React.StrictMode>,
