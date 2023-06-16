@@ -214,11 +214,11 @@ function Servicos() {
   return (
     <Layout>
       <Navbar/>
-      <Header/>
+      {/* <Header/> */}
       <div  className='bg-gradient-to-t from-orange-900 via-pretoneon  to-orange-500 '>
         {/* <ServicesList posts={posts_design} section_title={'Design Services'}/> */}
       </div>
-      <CTA/>
+      {/* <CTA/> */}
 
       <Footer/>
     </Layout>

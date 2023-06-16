@@ -80,7 +80,7 @@ function Contact() {
     return(
         <Layout>
             <Navbar/>
-            <div className="pt-28 bg-gradient-to-t from-orange-900 via-pretoneon  to-pretoneon">
+            {/* <div className="pt-28 bg-gradient-to-t from-orange-900 via-pretoneon  to-pretoneon">
               <div className="relative bg-gradient-to-t from-orange-900 via-pretoneon  to-pretoneon">
                       <div className="absolute inset-0">
                         <div className="absolute inset-y-0 left-0 w-1/2 " />
@@ -135,7 +135,7 @@ function Contact() {
                         </div>
                       </div>
                     </div>
-                    </div>
+                    </div> */}
         <Footer/>
     </Layout>
   )

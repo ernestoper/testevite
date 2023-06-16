@@ -11,7 +11,7 @@ function Portfolio() {
     <Layout>
         <Navbar/>
 
-        <Trabajos/>
+        {/* <Trabajos/> */}
 
         <Footer/>
     </Layout>
